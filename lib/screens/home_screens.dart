@@ -18,7 +18,7 @@ class HomeScreens extends StatelessWidget {
             SystemUiOverlayStyle(statusBarBrightness: Brightness.light),
       ),
       body: Padding(
-        padding:const EdgeInsets.fromLTRB(40, 1.2 * kToolbarHeight, 40, 20),
+        padding:  EdgeInsets.fromLTRB(40, 1.2 * kToolbarHeight, 40, 20),
         child: SizedBox(
           height: MediaQuery.of(context).size.height,
           child: Stack(
@@ -50,12 +50,37 @@ class HomeScreens extends StatelessWidget {
                       shape: BoxShape.circle, color: Color(0xFF63AB40)),
                 ),
               ),
+
               BackdropFilter(
                 filter: ImageFilter.blur(sigmaX: 100.0, sigmaY: 100.0),
                 child: Container(
                   decoration: const BoxDecoration(color: Colors.transparent),
                 ),
+              ),  Align(alignment: Alignment.center, child: Text('Discipline > Motivation', style: TextStyle(
+                color: Colors.white, fontSize: 25
+              ),)),
+              SizedBox(
+                width:MediaQuery.of(context).size.width,
+                height: MediaQuery.of(context).size.height,
+                child:   Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children :[
+                    Text('Lagos-ng-Country',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.w300
+                    ),),
+                    const SizedBox(height: 8,),
+                    Text('Good Morning', style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 25,
+                      fontWeight: FontWeight.bold,
+                    ),),
+                    Image.asset('assets/img1.png'),
+                  ]
+                )
               )
+
             ],
           ),
         ),
