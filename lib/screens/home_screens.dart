@@ -170,8 +170,64 @@ class HomeScreens extends StatelessWidget {
                             vertical: 5.0
                           ),
                           child: Divider(color: Colors.grey)
-                        )
-                      ]),),
+                        ),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Row(children: [
+                              Image.asset(
+                                'assets/img2.png',
+                                scale: 8,
+                              ),
+                              const SizedBox(width: 5),
+                              const Column(
+                                  crossAxisAlignment:
+                                  CrossAxisAlignment.start,
+                                  children: [
+                                    Text(
+                                      'Sunrise',
+                                      style: TextStyle(
+                                          color: Colors.white,
+                                          fontWeight: FontWeight.w300),
+                                    ),
+                                    SizedBox(height: 3),
+                                    Text(
+                                      '5:57 am',
+                                      style: TextStyle(
+                                          color: Colors.white,
+                                          fontWeight: FontWeight.w700),
+                                    ),
+                                  ])
+                            ]),
+                            Row(children: [
+                              Image.asset(
+                                'assets/img2.png',
+                                scale: 8,
+                              ),
+                              const SizedBox(width: 5),
+                              const Column(
+                                  crossAxisAlignment:
+                                  CrossAxisAlignment.start,
+                                  children: [
+                                    Text(
+                                      'Sunrise',
+                                      style: TextStyle(
+                                          color: Colors.white,
+                                          fontWeight: FontWeight.w300),
+                                    ),
+                                    SizedBox(height: 3),
+                                    Text(
+                                      '5:57 am',
+                                      style: TextStyle(
+                                          color: Colors.white,
+                                          fontWeight: FontWeight.w700),
+                                    ),
+                                  ])
+                            ])
+
+                          ],),
+
+                      ],),),
             ],
           ),
         ),
