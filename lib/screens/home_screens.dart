@@ -109,7 +109,7 @@ class HomeScreens extends StatelessWidget {
                                 fontWeight: FontWeight.w300),
                           ),
                         ),
-                        //  const SizedBox(height: 30,),
+                         const SizedBox(height: 30,),
                         Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
@@ -176,7 +176,7 @@ class HomeScreens extends StatelessWidget {
                           children: [
                             Row(children: [
                               Image.asset(
-                                'assets/img2.png',
+                                'assets/img5.png',
                                 scale: 8,
                               ),
                               const SizedBox(width: 5),
@@ -185,14 +185,14 @@ class HomeScreens extends StatelessWidget {
                                   CrossAxisAlignment.start,
                                   children: [
                                     Text(
-                                      'Sunrise',
+                                      'Temp Max',
                                       style: TextStyle(
                                           color: Colors.white,
                                           fontWeight: FontWeight.w300),
                                     ),
                                     SizedBox(height: 3),
                                     Text(
-                                      '5:57 am',
+                                      '12*C',
                                       style: TextStyle(
                                           color: Colors.white,
                                           fontWeight: FontWeight.w700),
@@ -201,7 +201,7 @@ class HomeScreens extends StatelessWidget {
                             ]),
                             Row(children: [
                               Image.asset(
-                                'assets/img2.png',
+                                'assets/img5.png',
                                 scale: 8,
                               ),
                               const SizedBox(width: 5),
@@ -210,14 +210,14 @@ class HomeScreens extends StatelessWidget {
                                   CrossAxisAlignment.start,
                                   children: [
                                     Text(
-                                      'Sunrise',
+                                      'Temp Min.',
                                       style: TextStyle(
                                           color: Colors.white,
                                           fontWeight: FontWeight.w300),
                                     ),
                                     SizedBox(height: 3),
                                     Text(
-                                      '5:57 am',
+                                      '8*C',
                                       style: TextStyle(
                                           color: Colors.white,
                                           fontWeight: FontWeight.w700),
